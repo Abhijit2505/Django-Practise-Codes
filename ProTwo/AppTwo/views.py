@@ -202,3 +202,7 @@ def index(request):
 </body>
 </html>
 ''')
+
+def help(request):
+    help_dict = {'help_insert':'HELP PAGE'}
+    return render(request,'ProTwo/help.html',context = help_dict)
