@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My First Template</title>
-  </head>
-  <body>
-    <h2>Hello, this is index.html</h2>
-    {{ insert_me }}
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Django Image</title>
+  <link rel="stylesheet" href="{% static "CSS/my_styles.css" %}" />
+</head>
+
+<body>
+  <center>
+    <h2>This Is Django</h2>
+    <img src="{% static "images/Django Red.jpg" %}" alt="Unable to load" />
+  </center>
+</body>
+
 </html>
